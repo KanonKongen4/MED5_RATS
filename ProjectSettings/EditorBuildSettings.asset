@@ -5,6 +5,12 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Attention Sandbox/test1.unity
+    guid: 21f5a31325d11b349844e53ffe93fca4
+  - enabled: 1
+    path: Assets/Scenes/Attention Sandbox/test2.unity
+    guid: 2f9c1605952c5864a929cb0d4d67c8d9
   - enabled: 0
     path: Assets/Scenes/Attention Sandbox/Greybox 1.unity
     guid: 9f5435fdd3ff3e146a618d1c4d00d8a8
@@ -14,9 +20,6 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/BasicScene.unity
     guid: 4e9fef26e6adb88479ad1b9834a32d94
-  - enabled: 1
-    path: Assets/Scenes/Attention Sandbox/Greybox 2, ColorSat.unity
-    guid: 21f5a31325d11b349844e53ffe93fca4
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: bfa1182bd221b4ca89619141f66f1260, type: 2}
     Unity.XR.WindowsMR.Settings: {fileID: 11400000, guid: dc5a169419fa04987b057f65238cf3ba, type: 2}
