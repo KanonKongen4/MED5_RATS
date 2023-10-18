@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 1785301105796212955}
   - component: {fileID: 8909425093776976991}
   - component: {fileID: 478262594955304948}
-  - component: {fileID: 1137032256405159075}
   m_Layer: 0
   m_Name: Cube (1)
   m_TagString: Untagged
@@ -302,28 +301,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3385198628557762598}
   m_Mesh: {fileID: 0}
---- !u!64 &1137032256405159075
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3385198628557762598}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 0}
 --- !u!1 &3951038414339449736
 GameObject:
   m_ObjectHideFlags: 0
@@ -335,7 +312,6 @@ GameObject:
   - component: {fileID: 1762400659914377205}
   - component: {fileID: 1665548286326274655}
   - component: {fileID: 4074386392930384861}
-  - component: {fileID: 2492136065961734275}
   m_Layer: 0
   m_Name: Handle
   m_TagString: Untagged
@@ -409,29 +385,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!136 &2492136065961734275
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3951038414339449736}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5000001
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
 --- !u!1 &8424058346684081452
 GameObject:
   m_ObjectHideFlags: 0
@@ -444,7 +397,6 @@ GameObject:
   - component: {fileID: 27448580564483315}
   - component: {fileID: 7679973259474097324}
   - component: {fileID: 3728035049149600576}
-  - component: {fileID: 4713200849141095686}
   m_Layer: 0
   m_Name: Door
   m_TagString: Untagged
@@ -2668,7 +2620,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 38
+  m_VersionIndex: 41
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
@@ -2722,26 +2674,4 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8424058346684081452}
-  m_Mesh: {fileID: 0}
---- !u!64 &4713200849141095686
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8424058346684081452}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
   m_Mesh: {fileID: 0}
