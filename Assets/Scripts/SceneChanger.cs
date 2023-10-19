@@ -18,7 +18,7 @@ public class SceneChanger : MonoBehaviour
         blackFadeCanvasGroup.alpha = 1f;
         StartCoroutine(opacityFaderOut); // When scene starts, remove the black Image
 
-        Invoke(nameof(InitiateSceneChange),4);
+        //Invoke(nameof(InitiateSceneChange),4);
     }
 
     public void InitiateSceneChange()
