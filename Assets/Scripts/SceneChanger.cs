@@ -13,8 +13,8 @@ public class SceneChanger : MonoBehaviour
     void Start()
     {
         blackFadeCanvasGroup = GetComponentInChildren<CanvasGroup>();
-        opacityFaderIn = FadeBlack(fadeTime, 1);
-        opacityFaderOut = FadeBlack(fadeTime, 0);
+        opacityFaderIn = OpacityFader(fadeTime, 1);
+        opacityFaderOut = OpacityFader(fadeTime, 0);
         blackFadeCanvasGroup.alpha = 1f;
         StartCoroutine(opacityFaderOut); // When scene starts, remove the black Image
 
@@ -29,13 +29,13 @@ public class SceneChanger : MonoBehaviour
         StartCoroutine(nameof(LoadScene),fadeTime + sceneChangeDelay);
     }
    
-    private IEnumerator FadeBlack(float timeToFade, float target)
+    private IEnumerator OpacityFader(float timeToFade, float target)
     {
         var currentOpacity = blackFadeCanvasGroup.alpha; // Get the current opacity from the canvasgroup component
         while (currentOpacity!= target) // if the current opacity has not reached target...
         {
             currentOpacity = Mathf.MoveTowards(currentOpacity, target, Time.deltaTime/timeToFade); // Mathf.MoveTowards automatically increments/decrements current
-            //Opacity towards the target. Time.deltaTime is divided by the timeToFade to get how much the 
+            //Opacity towards the target. Time.deltaTime is divided by the timeToFade to get the tiny opacity change needed in the following frames to achieve the target opacity in 2 seconds
             blackFadeCanvasGroup.alpha = currentOpacity;
             yield return 0;
         }
