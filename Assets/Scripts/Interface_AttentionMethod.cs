@@ -4,7 +4,7 @@ using UnityEngine;
 
 public interface Interface_AttentionMethod 
 {
-    public void DoMethod()
+    public void DoMethod(GameObject objectToAddAttentionTo)
     {
 
     }

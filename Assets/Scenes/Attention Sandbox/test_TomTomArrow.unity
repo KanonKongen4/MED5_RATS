@@ -3183,7 +3183,7 @@ GameObject:
   - component: {fileID: 113601800}
   - component: {fileID: 113601799}
   m_Layer: 0
-  m_Name: Cube (1)
+  m_Name: target2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3715,7 +3715,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 242271349}
-  - component: {fileID: 242271350}
   m_Layer: 0
   m_Name: TomTomArrow
   m_TagString: Untagged
@@ -3739,19 +3738,6 @@ Transform:
   - {fileID: 1735364551}
   m_Father: {fileID: 810570697}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &242271350
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 242271348}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cb790990f6377064584743b1ac7ca450, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  target: {fileID: 1267898307}
 --- !u!1 &323863546
 GameObject:
   m_ObjectHideFlags: 0
@@ -7995,6 +7981,7 @@ GameObject:
   - component: {fileID: 591075733}
   - component: {fileID: 591075735}
   - component: {fileID: 591075736}
+  - component: {fileID: 591075738}
   - component: {fileID: 591075737}
   m_Layer: 0
   m_Name: GameController
@@ -8010,7 +7997,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 591075732}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e4f9eb8e8d668814d956674431e7ba48, type: 3}
   m_Name: 
@@ -8061,8 +8048,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inputactionReference: {fileID: 0}
   currentTarget: {fileID: 0}
+  currentTargetID: 0
   previousTarget: {fileID: 0}
-  targets: []
+  targets:
+  - {fileID: 618815347}
+  - {fileID: 113601797}
 --- !u!114 &591075737
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8075,6 +8065,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6308fc0ca22981c4880e69262bb35cc6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &591075738
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 591075732}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a035b131abad6f46be278502da5f424, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tomTomArrow: {fileID: 242271348}
+  target: {fileID: 0}
 --- !u!1 &604961985
 GameObject:
   m_ObjectHideFlags: 0
@@ -8089,7 +8093,7 @@ GameObject:
   - component: {fileID: 604961986}
   m_Layer: 0
   m_Name: Cube (18)
-  m_TagString: Untagged
+  m_TagString: Target
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -8298,7 +8302,7 @@ GameObject:
   - component: {fileID: 618815349}
   - component: {fileID: 618815348}
   m_Layer: 0
-  m_Name: Cube (15)
+  m_Name: target1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10832,7 +10836,7 @@ GameObject:
   - component: {fileID: 1045249141}
   m_Layer: 0
   m_Name: Cube (11)
-  m_TagString: Untagged
+  m_TagString: Target
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -11466,7 +11470,7 @@ GameObject:
   - component: {fileID: 1110154677}
   m_Layer: 0
   m_Name: Cube (7)
-  m_TagString: Untagged
+  m_TagString: Target
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -11571,7 +11575,7 @@ GameObject:
   - component: {fileID: 1118330079}
   m_Layer: 0
   m_Name: Cube (13)
-  m_TagString: Untagged
+  m_TagString: Target
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -11944,7 +11948,7 @@ GameObject:
   - component: {fileID: 1267898311}
   - component: {fileID: 1267898310}
   - component: {fileID: 1267898309}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: target
   m_TagString: Untagged
   m_Icon: {fileID: 0}
