@@ -13846,7 +13846,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eac8f1283a7c4ec4b87ead0e2de7f28c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  changeTo: 0
+  changeTo: 4
 --- !u!43 &1206129485
 Mesh:
   m_ObjectHideFlags: 0
@@ -14067,7 +14067,7 @@ PrefabInstance:
     - target: {fileID: 9041484982415651085, guid: f41e77a9352202f4588abe3aa985086c, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 8185a043ab5596146aff8a15789994e1, type: 2}
+      objectReference: {fileID: 2100000, guid: 8898e36d6844c8f4bb75db4663aee7ef, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

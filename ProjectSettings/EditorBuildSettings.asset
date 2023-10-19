@@ -5,24 +5,9 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: Assets/Scenes/Attention Sandbox/test1.unity
-    guid: 21f5a31325d11b349844e53ffe93fca4
-  - enabled: 0
-    path: Assets/Scenes/Attention Sandbox/test2.unity
-    guid: 2f9c1605952c5864a929cb0d4d67c8d9
-  - enabled: 0
-    path: Assets/Scenes/Attention Sandbox/Greybox 1.unity
-    guid: 9f5435fdd3ff3e146a618d1c4d00d8a8
-  - enabled: 0
-    path: Assets/Scenes/SampleScene.unity
-    guid: 55daccc09a3b69647bbab145b54a3ab3
-  - enabled: 0
-    path: Assets/Scenes/BasicScene.unity
-    guid: 4e9fef26e6adb88479ad1b9834a32d94
   - enabled: 1
     path: Assets/Scenes/Test Rooms/Test 0.unity
-    guid: 6266426c11b7f5d4e9638b6c769fa6b1
+    guid: cc18736dc7a827e47ad1c81b66e6ddf4
   - enabled: 1
     path: Assets/Scenes/Test Rooms/Test 1.unity
     guid: 6d6ccd3b7c3ddda4fb40a241cfb59f7e
@@ -37,7 +22,10 @@ EditorBuildSettings:
     guid: 2b03425449e41d445ab2f29f088a9a89
   - enabled: 1
     path: Assets/Scenes/Test Rooms/Test 5.unity
-    guid: d16e6726b59d69245a89429a8cb42011
+    guid: 6266426c11b7f5d4e9638b6c769fa6b1
+  - enabled: 1
+    path: Assets/Scenes/Test Rooms/Test 6.unity
+    guid: 7223884c0f4b63044ac267d81ae95990
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: bfa1182bd221b4ca89619141f66f1260, type: 2}
     Unity.XR.WindowsMR.Settings: {fileID: 11400000, guid: dc5a169419fa04987b057f65238cf3ba, type: 2}

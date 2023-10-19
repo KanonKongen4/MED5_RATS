@@ -26,11 +26,20 @@ public class AttentionController : MonoBehaviour
         previousTarget = targets[0];
         attentionMethod.DoMethod(currentTarget);
     }
-    public void ChangeTarget()
+    public void ChangeToNextTarget()
     {
         if (currentTargetID == targets.Count) return; //"Guard clause" the below code won't run if the last target has been reached.
 
         currentTargetID++;
+        currentTarget = targets[currentTargetID];
+        previousTarget = currentTarget;
+
+        attentionMethod.DoMethod(currentTarget);
+    }
+    public void ChangeTargetByID(byte id)
+    {
+
+        currentTargetID = id;
         currentTarget = targets[currentTargetID];
         previousTarget = currentTarget;
 
