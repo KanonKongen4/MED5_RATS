@@ -7979,7 +7979,6 @@ GameObject:
   m_Component:
   - component: {fileID: 591075734}
   - component: {fileID: 591075733}
-  - component: {fileID: 591075735}
   - component: {fileID: 591075736}
   - component: {fileID: 591075738}
   - component: {fileID: 591075737}
@@ -7997,7 +7996,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 591075732}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e4f9eb8e8d668814d956674431e7ba48, type: 3}
   m_Name: 
@@ -8021,19 +8020,6 @@ Transform:
   - {fileID: 1292375064}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &591075735
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 591075732}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5d526325f85efd34bbe6190eff0f1a40, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  volume: {fileID: 810570702}
 --- !u!114 &591075736
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8046,13 +8032,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 30edcc517664bdc40958aeb2923fd283, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inputactionReference: {fileID: 0}
-  currentTarget: {fileID: 0}
   currentTargetID: 0
+  currentTarget: {fileID: 0}
   previousTarget: {fileID: 0}
   targets:
   - {fileID: 618815347}
   - {fileID: 113601797}
+  - {fileID: 1140227464}
+  - {fileID: 1045249139}
 --- !u!114 &591075737
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9935,7 +9922,7 @@ BoxCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}

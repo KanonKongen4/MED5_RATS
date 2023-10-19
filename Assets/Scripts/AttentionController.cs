@@ -6,23 +6,19 @@ using UnityEngine.InputSystem;
 public class AttentionController : MonoBehaviour
 {
     public Interface_AttentionMethod attentionMethod; // this finds the first class which uses the interface. So the first attention method class is selected here.
-    public InputActionReference inputactionReference;
-    public GameObject currentTarget;
     public int currentTargetID = 0;
+    public GameObject currentTarget;
     public GameObject previousTarget;
 
+    [Header("Add targets from the scene: the order decides when queues will be used")]
     public List<GameObject> targets;
 
     void Start()
     {
         attentionMethod = GetComponent<Interface_AttentionMethod>();
 
-        foreach (GameObject gm in GameObject.FindGameObjectsWithTag("Target"))
-        {
-            targets.Add(gm);
-        }
         SetStartTarget();
-        Invoke("ChangeTarget", 4);
+
     }
     private void SetStartTarget()
     {
