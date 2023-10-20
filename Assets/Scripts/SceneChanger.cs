@@ -7,12 +7,12 @@ using UnityEngine.UI;
 public class SceneChanger : MonoBehaviour
 {
     private IEnumerator opacityFaderIn, opacityFaderOut;
-    private CanvasGroup blackFadeCanvasGroup;
+    public CanvasGroup blackFadeCanvasGroup;
     public int sceneID;
     public int fadeTime = 2, sceneChangeDelay;
     void Start()
     {
-        blackFadeCanvasGroup = GetComponentInChildren<CanvasGroup>();
+        blackFadeCanvasGroup = Camera.main.GetComponentInChildren<CanvasGroup>();
         opacityFaderIn = OpacityFader(fadeTime, 1);
         opacityFaderOut = OpacityFader(fadeTime, 0);
         blackFadeCanvasGroup.alpha = 1f;

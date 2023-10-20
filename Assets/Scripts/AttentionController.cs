@@ -24,6 +24,7 @@ public class AttentionController : MonoBehaviour
     {
         currentTarget = targets[0];
         previousTarget = targets[0];
+        if(attentionMethod != null) // Checking if there is an attentionMethod present...
         attentionMethod.DoMethod(currentTarget);
     }
     public void ChangeToNextTarget()
