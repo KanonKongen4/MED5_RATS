@@ -22785,7 +22785,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6308fc0ca22981c4880e69262bb35cc6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  volumeProfile: {fileID: 11400000, guid: e993e7a596cb0584d9c7294472471f8b, type: 2}
+  volume: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

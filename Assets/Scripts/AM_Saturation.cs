@@ -1,14 +1,21 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.XR.CoreUtils;
 using UnityEngine;
 using UnityEngine.Rendering;
 using UnityEngine.Rendering.Universal;
 
-public class AM_Saturation : MonoBehaviour,  Interface_AttentionMethod
+public class AM_Saturation : MonoBehaviour, Interface_AttentionMethod
 {
     private byte overlayLayer = 6;
     public VolumeProfile volumeProfile;
 
+    private Volume volume;
+
+    private void Awake()
+    {
+        volume = Camera.main.GetComponent<Volume>();
+    }
 
     public void DoMethod(GameObject objectToAddAttentionTo)
     {
@@ -22,13 +29,12 @@ public class AM_Saturation : MonoBehaviour,  Interface_AttentionMethod
 
         colorAdjustments.saturation.Override(-100.0f);
     }
-    private void ChangeLayers(/*GameObject setAsDefault,*/ GameObject setAsOverlay)
+    private void ChangeLayers(GameObject setAsOverlay)
     {
-
-        //setAsDefault.layer = 0; //Default layer
-        //setAsDefault = setAsOverlay;
         setAsOverlay.layer = overlayLayer;
-
-        Debug.Log("did the layer thing");
+        foreach (Transform child in setAsOverlay.transform)
+        {
+            child.gameObject.layer = overlayLayer;
+        }
     }
 }
