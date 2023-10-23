@@ -15,7 +15,6 @@ GameObject:
   - component: {fileID: 5764871032075485495}
   - component: {fileID: 1173755960384760614}
   - component: {fileID: 2292084595964934883}
-  - component: {fileID: 1655478401165054016}
   m_Layer: 0
   m_Name: Firefly
   m_TagString: Untagged
@@ -215,19 +214,6 @@ MonoBehaviour:
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
   m_SoftShadowQuality: 0
---- !u!114 &1655478401165054016
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3076177232953242639}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8f1c0674c4f3215418b155478b1dc959, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 1
 --- !u!1 &7923047095986090566
 GameObject:
   m_ObjectHideFlags: 0
