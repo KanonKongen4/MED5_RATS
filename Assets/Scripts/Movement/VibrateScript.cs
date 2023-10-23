@@ -5,7 +5,7 @@ using UnityEngine.XR.Interaction.Toolkit.AffordanceSystem.Receiver.Primitives;
 
 public class VibrateScript : MonoBehaviour
 {
-    public float speed = 5.0f;
+    public float speed = 0.5f;
     public float intensity = 0.01f;
     void Update()
     {
