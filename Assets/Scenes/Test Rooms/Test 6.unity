@@ -9372,7 +9372,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eac8f1283a7c4ec4b87ead0e2de7f28c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  changeTo: 0
+  changeTo: 7
 --- !u!1 &716810572
 GameObject:
   m_ObjectHideFlags: 0
@@ -22054,7 +22054,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6308fc0ca22981c4880e69262bb35cc6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  volume: {fileID: 0}
+  volumeProfile: {fileID: 0}
 --- !u!114 &4319578094656063475
 MonoBehaviour:
   m_ObjectHideFlags: 0
