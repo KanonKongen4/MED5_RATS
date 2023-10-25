@@ -17,7 +17,7 @@ public class AttentionController : MonoBehaviour
     {
         attentionMethod = GetComponent<Interface_AttentionMethod>();
 
-        Invoke(nameof(SetStartTarget),1); // A second goes by before the method is started
+        Invoke(nameof(SetStartTarget),1.2f); // A second goes by before the method is started
 
     }
     private void SetStartTarget()
