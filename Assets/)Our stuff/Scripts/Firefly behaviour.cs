@@ -10,7 +10,7 @@ public class Fireflybehaviour : MonoBehaviour, Interface_AttentionMethod
     Vector3 startPosition;
     Vector3 endPosition;
 
-    private void Start()
+    private void Awake()
     {
         startPosition = fireflyObj.transform.position;
         endPosition = fireflyObj.transform.position;
@@ -19,13 +19,16 @@ public class Fireflybehaviour : MonoBehaviour, Interface_AttentionMethod
     // Start is called before the first frame update
     public void DoMethod (GameObject target)
     {
+        Debug.Log("Firefly go!");
         startPosition = fireflyObj.transform.position;
         if (target.GetComponent<Renderer>() != null)
         {
+            Debug.Log("End = center");
             endPosition = target.GetComponent<Renderer>().bounds.center;
         }
         else
         {
+            Debug.Log("End != center");
             endPosition = target.transform.position;
         }
     }
