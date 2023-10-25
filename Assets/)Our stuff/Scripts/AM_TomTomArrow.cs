@@ -13,6 +13,7 @@ public class AM_TomTomArrow : MonoBehaviour, Interface_AttentionMethod
     }
     private void Update()
     {
+        if (target == null) return;
         tomTomArrow.transform.LookAt(target.transform);
     }
 }
