@@ -27,6 +27,8 @@ public class TestScenesRandomizer : MonoBehaviour
     {
         if (sceneList.Count <= 0)
         {
+            // Final scene
+            newDoor.changeTo = 0;
             return;
         }
         DoorScenechange newDoor = FindObjectOfType<DoorScenechange>();
