@@ -25,13 +25,14 @@ public class TestScenesRandomizer : MonoBehaviour
 
     void RandomizeScene ()
     {
+        DoorScenechange newDoor = FindObjectOfType<DoorScenechange>();
         if (sceneList.Count <= 0)
         {
             // Final scene
             newDoor.changeTo = 0;
             return;
         }
-        DoorScenechange newDoor = FindObjectOfType<DoorScenechange>();
+        
         int nextDoor = Random.Range(0, sceneList.Count);
         newDoor.changeTo = sceneList[nextDoor];
         sceneList.RemoveAt(nextDoor);
