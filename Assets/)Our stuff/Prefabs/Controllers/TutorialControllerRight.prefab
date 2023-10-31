@@ -12,8 +12,8 @@ GameObject:
   - component: {fileID: 2375662218241601753}
   - component: {fileID: 4989152037638254006}
   - component: {fileID: 6170255477906577791}
-  - component: {fileID: 4840617673986176110}
-  - component: {fileID: 7720436807698620453}
+  - component: {fileID: 4072993464215559968}
+  - component: {fileID: 7936543259886957720}
   m_Layer: 0
   m_Name: text_rotate
   m_TagString: Untagged
@@ -278,7 +278,7 @@ LineRenderer:
   m_UseWorldSpace: 1
   m_Loop: 0
   m_ApplyActiveColorSpace: 1
---- !u!114 &4840617673986176110
+--- !u!114 &4072993464215559968
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -287,26 +287,22 @@ MonoBehaviour:
   m_GameObject: {fileID: 7694689923877448622}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3284d6c4ca1ba9d48b913bb890944026, type: 3}
+  m_Script: {fileID: 11500000, guid: cb790990f6377064584743b1ac7ca450, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &7936543259886957720
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7694689923877448622}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68288d5f66ca2754898c67487255a32c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 3130130868873301048}
-  decreaseLine: 0
-  pointfloat: 0
-  text: {fileID: 0}
-  color: {r: 0, g: 0, b: 0, a: 0}
---- !u!114 &7720436807698620453
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7694689923877448622}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c3469ed305e6f2040a9ea278fd8f95a0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &8305043268628038879
 GameObject:
   m_ObjectHideFlags: 0
@@ -389,11 +385,11 @@ PrefabInstance:
     - target: {fileID: -2470772935061307487, guid: 11cd62256b1d470f922b2c8e6446cc77, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: a8dd14a7594cda340bd4b354632dedc7, type: 2}
+      objectReference: {fileID: 2100000, guid: e1b4debff657aa94293a2e4e5f15b8a0, type: 2}
     - target: {fileID: -115916936517796725, guid: 11cd62256b1d470f922b2c8e6446cc77, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: f57d8a732599c844a8d40fdf5d6b0bcf, type: 2}
+      objectReference: {fileID: 2100000, guid: e1b4debff657aa94293a2e4e5f15b8a0, type: 2}
     - target: {fileID: 919132149155446097, guid: 11cd62256b1d470f922b2c8e6446cc77, type: 3}
       propertyPath: m_Name
       value: TutorialControllerRight
@@ -410,9 +406,6 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 11cd62256b1d470f922b2c8e6446cc77, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1798789766462463703}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 11cd62256b1d470f922b2c8e6446cc77, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 885540350613669934}
   m_SourcePrefab: {fileID: 100100000, guid: 11cd62256b1d470f922b2c8e6446cc77, type: 3}
 --- !u!4 &1699341519312998884 stripped
@@ -425,23 +418,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 11cd62256b1d470f922b2c8e6446cc77, type: 3}
   m_PrefabInstance: {fileID: 1161928045725234703}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1798789766462463703
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2080265791152393054}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 841f9f0b7324a2a488fd5f855902a9f1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  text_joystickLeft: {fileID: 0}
-  text_bumber: {fileID: 0}
-  text_joystickRight: {fileID: 4989152037638254006}
-  ableToMakeControlsDisappear: 0
-  rightContoller: 1
 --- !u!114 &885540350613669934
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -605,7 +581,7 @@ MonoBehaviour:
     m_ActionName: XRI LeftHand Locomotion/Teleport Direction
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1798789766462463703}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: TutorialScri, Assembly-CSharp
         m_MethodName: HideRotateText
         m_Mode: 1
@@ -737,7 +713,7 @@ MonoBehaviour:
     m_ActionName: XRI RightHand Locomotion/Teleport Direction
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1798789766462463703}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: TutorialScri, Assembly-CSharp
         m_MethodName: HideRotateText
         m_Mode: 1

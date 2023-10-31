@@ -127,8 +127,8 @@ GameObject:
   - component: {fileID: 3062381388076931168}
   - component: {fileID: 8707309631471451108}
   - component: {fileID: 1775090301604480513}
-  - component: {fileID: 4178825778110624769}
-  - component: {fileID: 3160942117731063259}
+  - component: {fileID: 1624458738714010312}
+  - component: {fileID: 7946231514791123984}
   m_Layer: 0
   m_Name: text_grab
   m_TagString: Untagged
@@ -393,7 +393,7 @@ LineRenderer:
   m_UseWorldSpace: 1
   m_Loop: 0
   m_ApplyActiveColorSpace: 1
---- !u!114 &4178825778110624769
+--- !u!114 &1624458738714010312
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -402,15 +402,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 2449750099409950709}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3284d6c4ca1ba9d48b913bb890944026, type: 3}
+  m_Script: {fileID: 11500000, guid: 68288d5f66ca2754898c67487255a32c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 1891707657218732915}
-  decreaseLine: 0
-  pointfloat: 0
-  text: {fileID: 0}
-  color: {r: 0, g: 0, b: 0, a: 0}
---- !u!114 &3160942117731063259
+  target: {fileID: 3694369764163211448}
+--- !u!114 &7946231514791123984
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -419,7 +415,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2449750099409950709}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c3469ed305e6f2040a9ea278fd8f95a0, type: 3}
+  m_Script: {fileID: 11500000, guid: cb790990f6377064584743b1ac7ca450, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &2609792550142405377
@@ -517,8 +513,8 @@ GameObject:
   - component: {fileID: 7620886500111422566}
   - component: {fileID: 8605106090599299556}
   - component: {fileID: 3970493638868676940}
-  - component: {fileID: 2532090125376630932}
-  - component: {fileID: 2502758720733387564}
+  - component: {fileID: 8719850263313172951}
+  - component: {fileID: 326194668749402062}
   m_Layer: 0
   m_Name: text_walkAround
   m_TagString: Untagged
@@ -783,7 +779,7 @@ LineRenderer:
   m_UseWorldSpace: 1
   m_Loop: 0
   m_ApplyActiveColorSpace: 1
---- !u!114 &2532090125376630932
+--- !u!114 &8719850263313172951
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -792,15 +788,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 3250956419807768564}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3284d6c4ca1ba9d48b913bb890944026, type: 3}
+  m_Script: {fileID: 11500000, guid: cb790990f6377064584743b1ac7ca450, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 3697988378112344297}
-  decreaseLine: 0
-  pointfloat: 0
-  text: {fileID: 0}
-  color: {r: 0, g: 0, b: 0, a: 0}
---- !u!114 &2502758720733387564
+--- !u!114 &326194668749402062
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -809,9 +800,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 3250956419807768564}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c3469ed305e6f2040a9ea278fd8f95a0, type: 3}
+  m_Script: {fileID: 11500000, guid: 68288d5f66ca2754898c67487255a32c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  target: {fileID: 8733067621602756315}
 --- !u!1 &4052874423300716117
 GameObject:
   m_ObjectHideFlags: 0
@@ -1437,7 +1429,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4479087502123746232}
-  - component: {fileID: 6510226098912667456}
   - component: {fileID: -4724013351981054390}
   m_Layer: 0
   m_Name: TutorialControllerLeft
@@ -1469,23 +1460,6 @@ Transform:
   - {fileID: 2291221534626466253}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6510226098912667456
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9027702613485712000}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 841f9f0b7324a2a488fd5f855902a9f1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  text_joystickLeft: {fileID: 8605106090599299556}
-  text_bumber: {fileID: 8707309631471451108}
-  text_joystickRight: {fileID: 0}
-  ableToMakeControlsDisappear: 0
-  rightContoller: 0
 --- !u!114 &-4724013351981054390
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1589,7 +1563,7 @@ MonoBehaviour:
     m_ActionName: XRI LeftHand/Poke Rotation
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6510226098912667456}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: TutorialScri, Assembly-CSharp
         m_MethodName: HideGrabText
         m_Mode: 1
@@ -1665,7 +1639,7 @@ MonoBehaviour:
     m_ActionName: XRI LeftHand Locomotion/Turn
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6510226098912667456}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: TutorialScri, Assembly-CSharp
         m_MethodName: HideWalkText
         m_Mode: 1
