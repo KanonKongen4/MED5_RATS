@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class TestScenesRandomizer : MonoBehaviour
 {
-    private List<int> sceneList = new List<int>{1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+    private List<int> sceneList = new List<int>{1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11};
 
     private void Awake()
     {
