@@ -11,6 +11,8 @@ public class TextFader : MonoBehaviour
 
     public XRIDefaultInputActions inputActions;
 
+    public bool AutoStart = true;
+
     //private void Awake()
     //{
     //    inputActions = new XRIDefaultInputActions();
@@ -30,6 +32,7 @@ public class TextFader : MonoBehaviour
     {
         textToFade = GetComponent<TextMeshPro>();
         textToFade.alpha = 0;
+        if(AutoStart)
         StartCoroutine(Fader(timeBeforeFade));
 
     }
@@ -46,6 +49,8 @@ public class TextFader : MonoBehaviour
 
     public void StartFadeIn()
     {
+        StartCoroutine(Fader(timeBeforeFade));
+
     }
-  
+
 }
