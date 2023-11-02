@@ -16,7 +16,6 @@ public class DoorScenechange : MonoBehaviour
     {
         if (collision.gameObject.tag == "Key to Door")
         { 
-
             sceneChanger.sceneID = changeTo;
             sceneChanger.InitiateSceneChange();
         }
