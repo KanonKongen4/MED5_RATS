@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.Properties;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class TestScenesRandomizer : MonoBehaviour
 {
@@ -9,17 +10,18 @@ public class TestScenesRandomizer : MonoBehaviour
 
     private void Awake()
     {
-        DontDestroyOnLoad(this.gameObject);
-    }
 
-    private void Start()
-    {
+        DontDestroyOnLoad(this.gameObject);
         RandomizeScene();
     }
 
 
     private void OnLevelWasLoaded(int level)
     {
+        if (SceneManager.GetActiveScene().buildIndex == 0)
+        {
+            return;
+        }
         RandomizeScene();
     }
 
@@ -30,6 +32,7 @@ public class TestScenesRandomizer : MonoBehaviour
         {
             // Final scene
             newDoor.changeTo = 0;
+            Destroy(gameObject);
             return;
         }
         
