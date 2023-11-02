@@ -145,7 +145,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2449750099409950709}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -0.1227}
+  m_LocalPosition: {x: 0, y: 0, z: 0.0015}
   m_LocalScale: {x: -0.023445027, y: 0.018889, z: 0.018889}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -153,8 +153,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.128, y: -0.11}
-  m_SizeDelta: {x: 8.59, y: 5}
+  m_AnchoredPosition: {x: -0.0349, y: -0.0619}
+  m_SizeDelta: {x: 0.61, y: 1.81}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!23 &3062381388076931168
 MeshRenderer:
@@ -245,8 +245,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 18
-  m_fontSizeBase: 18
+  m_fontSize: 10
+  m_fontSizeBase: 10
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -311,7 +311,7 @@ LineRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: b0e96864bafcfb54894bb238ad56cf3b, type: 2}
+  - {fileID: 2100000, guid: 46c9e7c38be5ff5429f7b0d9205963a1, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -337,7 +337,7 @@ LineRenderer:
   - {x: 0, y: 0, z: 1}
   m_Parameters:
     serializedVersion: 3
-    widthMultiplier: 0.003
+    widthMultiplier: 0.0015
     widthCurve:
       serializedVersion: 2
       m_Curve:
@@ -386,8 +386,8 @@ LineRenderer:
     numCornerVertices: 0
     numCapVertices: 0
     alignment: 0
-    textureMode: 0
-    textureScale: {x: 1, y: 1}
+    textureMode: 3
+    textureScale: {x: 18, y: 1}
     shadowBias: 0.5
     generateLightingData: 0
   m_MaskInteraction: 0
@@ -434,6 +434,7 @@ MonoBehaviour:
   textToFade: {fileID: 0}
   timeBeforeFade: 2
   fadeSpeed: 0.02
+  AutoStart: 1
 --- !u!1 &2609792550142405377
 GameObject:
   m_ObjectHideFlags: 0
@@ -547,7 +548,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3250956419807768564}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -0.125}
+  m_LocalPosition: {x: 0, y: 0, z: -0.0571}
   m_LocalScale: {x: -0.023445027, y: 0.018889, z: 0.018889}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -555,8 +556,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.215, y: 0.07}
-  m_SizeDelta: {x: 8.59, y: 5}
+  m_AnchoredPosition: {x: 0.1005, y: 0.0444}
+  m_SizeDelta: {x: 0.97, y: 1.83}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!23 &7620886500111422566
 MeshRenderer:
@@ -647,8 +648,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 18
-  m_fontSizeBase: 18
+  m_fontSize: 10
+  m_fontSizeBase: 10
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -713,7 +714,7 @@ LineRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: b0e96864bafcfb54894bb238ad56cf3b, type: 2}
+  - {fileID: 2100000, guid: 46c9e7c38be5ff5429f7b0d9205963a1, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -739,7 +740,7 @@ LineRenderer:
   - {x: 0, y: 0, z: 1}
   m_Parameters:
     serializedVersion: 3
-    widthMultiplier: 0.003
+    widthMultiplier: 0.0015
     widthCurve:
       serializedVersion: 2
       m_Curve:
@@ -788,8 +789,8 @@ LineRenderer:
     numCornerVertices: 0
     numCapVertices: 0
     alignment: 0
-    textureMode: 0
-    textureScale: {x: 1, y: 1}
+    textureMode: 3
+    textureScale: {x: 18, y: 1}
     shadowBias: 0.5
     generateLightingData: 0
   m_MaskInteraction: 0
@@ -836,6 +837,7 @@ MonoBehaviour:
   textToFade: {fileID: 0}
   timeBeforeFade: 2
   fadeSpeed: 0.02
+  AutoStart: 1
 --- !u!1 &4052874423300716117
 GameObject:
   m_ObjectHideFlags: 0
