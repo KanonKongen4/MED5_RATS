@@ -4782,6 +4782,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: GameController
       objectReference: {fileID: 0}
+    - target: {fileID: 401680639467060745, guid: d62fe426d911ef44a9ad63b545b697cb, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2456061673922230028, guid: d62fe426d911ef44a9ad63b545b697cb, type: 3}
       propertyPath: m_Alpha
       value: 1
@@ -10060,8 +10064,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: XR Origin (XR Rig)
       objectReference: {fileID: 0}
+    - target: {fileID: 7358018995839538986, guid: 92d7586fa2f9ab241a31c52e57e75d86, type: 3}
+      propertyPath: m_Cameras.Array.size
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 1414607856536006985, guid: 92d7586fa2f9ab241a31c52e57e75d86, type: 3}
+    - {fileID: 5350152930559689892, guid: 92d7586fa2f9ab241a31c52e57e75d86, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 92d7586fa2f9ab241a31c52e57e75d86, type: 3}
