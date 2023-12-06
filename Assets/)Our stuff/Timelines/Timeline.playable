@@ -18,7 +18,7 @@ MonoBehaviour:
   m_Muted: 0
   m_CustomPlayableFullTypename: 
   m_Curves: {fileID: 0}
-  m_Parent: {fileID: 11400000}
+  m_Parent: {fileID: 3813146214664180517}
   m_Children: []
   m_Clips: []
   m_Markers:
@@ -199,7 +199,7 @@ MonoBehaviour:
   m_Muted: 0
   m_CustomPlayableFullTypename: 
   m_Curves: {fileID: 0}
-  m_Parent: {fileID: 11400000}
+  m_Parent: {fileID: 3813146214664180517}
   m_Children: []
   m_Clips:
   - m_Version: 1
@@ -612,7 +612,7 @@ MonoBehaviour:
   m_Muted: 0
   m_CustomPlayableFullTypename: 
   m_Curves: {fileID: 0}
-  m_Parent: {fileID: 11400000}
+  m_Parent: {fileID: 3813146214664180517}
   m_Children:
   - {fileID: -8970807035971045536}
   m_Clips:
@@ -789,10 +789,7 @@ MonoBehaviour:
   m_Version: 0
   m_Tracks:
   - {fileID: -3025809412175526160}
-  - {fileID: 7034618332858591072}
-  - {fileID: -7245639611742157062}
-  - {fileID: -1750060350137086730}
-  - {fileID: -9037735433949374112}
+  - {fileID: 3813146214664180517}
   m_FixedDuration: 0
   m_EditorSettings:
     m_Framerate: 60
@@ -1101,6 +1098,33 @@ MonoBehaviour:
   m_OpenClipOffsetRotation: {x: 0, y: 0, z: 0, w: 1}
   m_Rotation: {x: 0, y: 0, z: 0, w: 1}
   m_ApplyOffsets: 0
+--- !u!114 &3813146214664180517
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0fc6f5187a81dc47999eefade6f0935, type: 3}
+  m_Name: Rat stuff
+  m_EditorClassIdentifier: 
+  m_Version: 3
+  m_AnimClip: {fileID: 0}
+  m_Locked: 0
+  m_Muted: 0
+  m_CustomPlayableFullTypename: 
+  m_Curves: {fileID: 0}
+  m_Parent: {fileID: 11400000}
+  m_Children:
+  - {fileID: 7034618332858591072}
+  - {fileID: -7245639611742157062}
+  - {fileID: -9037735433949374112}
+  - {fileID: -1750060350137086730}
+  m_Clips: []
+  m_Markers:
+    m_Objects: []
 --- !u!114 &4099630960871284677
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1311,7 +1335,7 @@ MonoBehaviour:
   m_Muted: 0
   m_CustomPlayableFullTypename: 
   m_Curves: {fileID: 0}
-  m_Parent: {fileID: 11400000}
+  m_Parent: {fileID: 3813146214664180517}
   m_Children:
   - {fileID: -3409510806738268271}
   m_Clips:
