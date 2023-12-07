@@ -102,7 +102,7 @@ Material:
     - _DepthFade: 1
     - _Dissolve: 0
     - _Distortion: 1.5
-    - _DistortionAmount: 3
+    - _DistortionAmount: 3.21
     - _DistortionEnable: 0
     - _DistortionMask: 1.5
     - _DistortionMask1: 0
@@ -113,7 +113,7 @@ Material:
     - _Dst1: 10
     - _DstBlend: 1
     - _Emissive: 50
-    - _EmissiveIntensity: 55
+    - _EmissiveIntensity: 5
     - _Emissive_Amount: 10
     - _EnableFogOnTransparent: 1
     - _Global_Speed: -3
@@ -125,7 +125,7 @@ Material:
     - _Mask_Speed: 0
     - _NoisesOpacityBoost: 1.86
     - _Noises_Multiply: 30
-    - _Noises_Power: 1.25
+    - _Noises_Power: 1.45
     - _Opacity_Boost: 8
     - _Opacity_DepthDistance: 1
     - _Opacity_DepthFade: 1
@@ -164,9 +164,9 @@ Material:
     - __dirty: 0
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 0}
-    - _ColorBottom: {r: 1, g: 0.5430124, b: 0, a: 0}
+    - _ColorBottom: {r: 1, g: 0.32998133, b: 0, a: 0}
     - _ColorDown: {r: 1, g: 0.5, b: 0, a: 0}
-    - _ColorTop: {r: 1, g: 0.510552, b: 0, a: 0}
+    - _ColorTop: {r: 1, g: 0.38405985, b: 0, a: 0}
     - _ColorUp: {r: 1, g: 0.33333334, b: 0, a: 0}
     - _DoubleSidedConstants: {r: 1, g: 1, b: -1, a: 0}
     - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
