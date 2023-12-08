@@ -24,11 +24,14 @@ public class LightFlicker : MonoBehaviour
     [Range(1, 50)]
     public int smoothing = 5;
 
+    public bool UseFlicker;
+    private float minIntensityLocal = 0f;
+    private float maxIntensityLocal = 0f;
     // Continuous average calculation via FIFO queue
     // Saves us iterating every time we update, we just change by the delta
     Queue<float> smoothQueue;
     float lastSum = 0;
-    public float CurrentTargetIntensity = 1;
+    public float CurrentTargetIntensity = 0;
 
     /// <summary>
     /// Reset the randomness and start again. You usually don't need to call
@@ -57,6 +60,12 @@ public class LightFlicker : MonoBehaviour
         if (light == null)
             return;
 
+        if (UseFlicker)
+        {
+            minIntensityLocal = minIntensity;
+            maxIntensityLocal = maxIntensity;
+        }
+
         // pop off an item if too big
         while (smoothQueue.Count >= smoothing)
         {
@@ -64,12 +73,11 @@ public class LightFlicker : MonoBehaviour
         }
 
         // Generate random new item, calculate new average
-        float newVal = Random.Range(minIntensity+ CurrentTargetIntensity, maxIntensity+ CurrentTargetIntensity);
+        float newVal = Random.Range(minIntensityLocal + CurrentTargetIntensity, maxIntensityLocal + CurrentTargetIntensity);
         smoothQueue.Enqueue(newVal);
         lastSum += newVal;
 
         // Calculate new smoothed average
         light.intensity = lastSum / (float)smoothQueue.Count;
     }
-
 }
