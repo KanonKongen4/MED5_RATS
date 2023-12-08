@@ -8831,7 +8831,7 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1257050259}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: ec61c6a9cc19ae546bc92904760b3fa6, type: 2}
   m_CullingMode: 0
@@ -14691,8 +14691,6 @@ PlayableDirector:
   m_SceneBindings:
   - key: {fileID: 5546487535887948580, guid: 83dbeed23988790449d7d8ac130e542b, type: 2}
     value: {fileID: 1268357893}
-  - key: {fileID: 2357030325948757931, guid: 83dbeed23988790449d7d8ac130e542b, type: 2}
-    value: {fileID: 1257050264}
   - key: {fileID: 519227570290394848, guid: 83dbeed23988790449d7d8ac130e542b, type: 2}
     value: {fileID: 318127731}
   - key: {fileID: 7034618332858591072, guid: 83dbeed23988790449d7d8ac130e542b, type: 2}
