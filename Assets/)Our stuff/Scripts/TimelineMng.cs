@@ -1,18 +1,15 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.InputSystem.XR;
 using UnityEngine.Playables;
-using UnityEngine.Rendering;
-using UnityEngine.Timeline;
-using UnityEngine.XR.OpenXR.Input;
 
 public class TimelineMng : MonoBehaviour
 {
     private Animator[] animators;
     private PlayableDirector director;
-    public XRController rController;
-
+    public InputActionReference selectAction;
+    bool timelineRunning = false;
+    
     private void Start()
     {
         director = GetComponent<PlayableDirector>();
@@ -22,6 +19,17 @@ public class TimelineMng : MonoBehaviour
 
     private void Update()
     {
+        if (timelineRunning)
+        {
+            return;
+        }
+        float butDown = selectAction.action.ReadValue<float>();
+        Debug.Log(butDown);
+        if (butDown != 0)
+        {
+            BeginTimeline();
+            timelineRunning = true;
+        }
     }
 
     public void BeginTimeline()
