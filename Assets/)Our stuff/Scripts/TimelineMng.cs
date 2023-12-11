@@ -15,6 +15,11 @@ public class TimelineMng : MonoBehaviour
         director = GetComponent<PlayableDirector>();
         animators = FindObjectsOfType<Animator>();
         director.Pause();
+
+        for (int i = 0; i < animators.Length; i++)
+        {
+            animators[i].enabled = false;
+        }
     }
 
     private void Update()
