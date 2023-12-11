@@ -29,9 +29,9 @@ public class TimelineMng : MonoBehaviour
             return;
         }
         float butDown = selectAction.action.ReadValue<float>();
-        Debug.Log(butDown);
         if (butDown != 0)
         {
+            Debug.Log(butDown);
             BeginTimeline();
             timelineRunning = true;
         }
