@@ -29,7 +29,7 @@ public class TimelineMng : MonoBehaviour
             return;
         }
         float butDown = selectAction.action.ReadValue<float>();
-        if (butDown != 0)
+        if (butDown > .9f)
         {
             Debug.Log(butDown);
             BeginTimeline();
